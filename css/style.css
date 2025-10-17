@@ -1,0 +1,501 @@
+/*----- General -----*/
+
+*{ box-sizing: border-box;}
+
+.header{
+    width: 75%;
+    max-width: none;
+    margin: 0 auto;
+}
+
+/** Proprietés Polices de Caractères **/
+
+ .bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.exo-2-p {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ----- Positionnement -----*/
+
+.flex-cote{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ----- Header -----*/
+
+nav li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 3px 7px;
+	border: 1px solid;
+}
+
+nav a:hover{
+	display: inline-block;
+	text-decoration: none;
+	padding: 3px 7px;
+	border: 1px solid;
+    color: aliceblue;
+	background-color: #693D65;
+}
+
+header{
+    background-color: #37A4CC;
+}
+
+header h1 a{
+   color: #693D65;
+   text-decoration: none;
+}
+
+header h1 a:hover{
+   color: #AF6672;
+   text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+/**-- Proprieté Body--**/
+
+ body{
+    margin: 0;
+    padding: 0;
+ }
+
+/** ----- Proprieté du main ----**/
+
+#slogan {
+  background-image: url(../img/Cameroon-Food.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh; /* Garde une belle hauteur d’écran */
+  
+  display: flex;
+  justify-content: center;   /* Centre horizontalement */
+  align-items: center;       /* Centre verticalement */
+  text-align: center;
+  flex-direction: column;
+  padding: 0;                /* ❌ Supprime le padding qui cassait le centrage */
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.container1 a {
+  background-color: #693D65;
+  color: #E3CFDE;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.container1 a:hover {
+  background-color: #AF6672;
+  color: #E3CFDE;
+}
+
+
+.container2{
+    max-width: none;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+
+figure{
+    float: right;
+    width: 50%;
+}
+
+#qui_sommes_nous{
+    background-color: #AF6672;
+    padding: 7%;
+}
+
+video{
+    width: 100%;
+}
+
+/** Footer **/
+
+footer{
+    background-color: #37A4CC;
+    margin: none;
+    padding: 0 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    max-width: none;
+    margin: 0 auto;
+}
+
+/*========== Proprietés Page Services ============*/
+
+
+
+.container_services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    background-color: #37A4CC;
+    border: 1px solid;
+	padding: 15px;
+	margin-bottom: 30px;
+    width: 95%;
+    box-shadow: 2px 4px 10px 4px #E3CFDE;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.card img{
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card img:hover{
+    box-shadow: 2px 4px 10px 4px #E3CFDE;
+}
+
+
+.link{
+    border: 1px solid black;
+    background-color: #AF6672;
+    border-radius: 0.75rem;
+    color: aliceblue;
+    padding: 7px 15px;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.link:hover{
+    border: 1px solid black;
+    background-color: #d49855;
+    border-radius: 0.5rem;
+    color: #000000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/** #7292b7 **/
+
+.col-33{
+    width: 33.33%;
+    max-width: none;
+    padding: 0 15px;
+}
+
+.col-100{
+    display: flex;
+	margin: 0 -15px;
+	flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-50{
+    width: 90%;
+}
+
+#section-service{
+    background-color: #E3CFDE;
+}
+
+.flex{
+    display: flex;
+}
+
+#client_satisfait{
+    background-color: #AF6672;
+    padding: 7%;
+    /* width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; */
+}
+
+.col-25{
+    width: 25%;
+    padding: 5px;
+}
+
+.col-25 img{
+    width: 100%;
+}
+
+.container_clients_satisfait{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card_client{
+    padding: 15px;
+	margin-bottom: 30px;
+    width: 95%;
+}
+
+.card_client img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+
+    /* width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.card_client img:hover{
+    box-shadow: 2px 4px 10px 4px #E3CFDE;
+}
+
+/*========== Proprietés Page Services_A_B_C ============*/
+
+#service_A{
+    /* width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;    */
+    background-color: #AF6672;
+}
+
+.col-60{
+    width: 65%;
+    margin: 1px auto
+}
+
+.flex-colonne{
+    display: flex;
+     width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.card_service img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    margin-top: -15px;
+}
+
+.card_service img:hover{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    box-shadow: 4px 4px 10px 4px #E3CFDE;
+}
+
+.card_service{
+    width: 95%;
+    padding: 15px;
+    line-height: 2.2rem;
+}
+
+.col-40{
+    width: 35%;
+    padding: 5px;
+}
+
+/*========== Proprietés Page Nos_forfaits ============*/
+
+th, td{
+    border: 2px solid #E3CFDE;
+}
+
+#forfait{
+    background-color: #AF6672;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+.container_forfait{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+table{
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-collapse: collapse;
+}
+
+.table_void{
+    border: none;
+    background-color: #e7e9ef00;
+}
+
+th{
+    background-color: #693D65;
+    padding: 20px;
+}
+
+td{
+    background-color: #AF6672;
+    padding: 20px;
+}
+
+td a{
+    border: 2px solid #E3CFDE;
+    background-color: #37A4CC;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #E3CFDE;
+}
+
+td a:hover{
+    border: 2px solid #E3CFDE;
+    background-color: #37A4CC;
+    box-shadow: 1px 1px 4px 1px #E3CFDE;
+    padding: 5px;
+    color: #693D65;
+    text-decoration: none;
+    text-align: center;
+}
+
+/** ========== Proprieté de la page blogue ==========**/
+
+.container_blogue{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card_blogue{
+    display: flex;
+}
+
+.blogue-25{
+    width: 33.33%;
+}
+
+.blogue-25 img{
+    width: 370px;
+    height: 270px;
+}
+
+.blogue-75{
+    width: 66.66%;
+    line-height: 2rem;
+    padding: 0px 10px 10px 10px;
+}
+
+#blogue{
+    background-color: #AF6672;
+    margin: 0;
+    padding-top: 5%;
+}
+
+/** ========== Page nous joindre ==========**/
+
+#nous_joindre{
+    background-color: #AF6672;
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;
+}
+
+.container_nous_joindre{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.address{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 2%;
+}
+
+.address_jr{
+    display: flex;
+    align-items: center;
+}
+
+.address_jr address{
+    border: 2px solid #E3CFDE;
+    padding: 10px;
+    background-color: #37A4CC;
+    margin: 5px;
+}
+
+.address_jr address:hover{
+    border: 2px solid #E3CFDE;
+    padding: 10px;
+    background-color: #37A4CC;
+    margin: 5px;
+    box-shadow: 4px 4px 10px 4px #E3CFDE;
+}
+
+address a{
+    text-decoration: none;
+    color: #000000;
+}
+
+address a:hover{
+    text-decoration: none;
+    color: #E3CFDE
+}
+
+.map{
+    width: 100%;
+    padding: 1%;
+}
+
+
