@@ -254,6 +254,44 @@ video {
     nav a{
         font-size: small;
     }
+
+    td a {
+        display: block;
+        border: 2px solid #E3CFDE;
+        background-color: #37A4CC;
+        padding: 5px;
+        text-decoration: none;
+        text-align: center;
+        color: #E3CFDE;
+    }
+
+    td a:hover {
+        border: 2px solid #E3CFDE;
+        background-color: #37A4CC;
+        box-shadow: 1px 1px 4px 1px #E3CFDE;
+        padding: 5px;
+        color: #693D65;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    table {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-collapse: collapse;
+        font-size: x-small;
+    }
+
+    .container_forfait {
+        width: 100%;
+        padding: 0px;
+    }
 }
 
 /** Footer **/
