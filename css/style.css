@@ -85,14 +85,14 @@ header h1 a:hover {
     padding-top: 0.1rem;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:960px) {
     nav li {
         display: inline;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    h1{
+    h1 {
         text-align: center;
         margin: 0 auto;
     }
@@ -101,6 +101,54 @@ header h1 a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:630px) {
+    nav li {
+        display: inline;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .header {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .flex-cote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        display: inline;
+        text-decoration: none;
+        padding: 1px 5px;
+        border: 1px solid;
+    }
+
+    nav a:hover {
+        display: inline;
+        text-decoration: none;
+        padding: 1px 5px;
+        border: 1px solid;
+        color: aliceblue;
+        background-color: #693D65;
+    }
+
+    nav ul {
+        padding: 0;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -354,14 +402,15 @@ footer {
         flex-wrap: wrap;
     }
 
-    .col-33,.col-25 {
+    .col-33,
+    .col-25 {
         width: 100%;
         max-width: none;
         padding: 0 15px;
         margin: 0 auto;
     }
 
-    h2{
+    h2 {
         text-align: center;
         margin: 0 auto;
     }
