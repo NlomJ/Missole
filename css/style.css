@@ -85,6 +85,26 @@ header h1 a:hover {
     padding-top: 0.1rem;
 }
 
+@media screen and (max-width:960px) {
+    nav li {
+        display: inline;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .flex-cote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 /**-- Proprieté Body--**/
 
 body {
@@ -171,12 +191,12 @@ video {
         margin: 0 auto;
     }
 
-    video{
+    video {
         display: inline;
         justify-content: center;
     }
 
-    .container2{
+    .container2 {
         align-items: center;
         text-align: justify;
     }
@@ -334,11 +354,16 @@ footer {
         flex-wrap: wrap;
     }
 
-    .col-33,
-    .col-25 {
+    .col-33,.col-25 {
         width: 100%;
         max-width: none;
         padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    h2{
+        text-align: center;
+        margin: 0 auto;
     }
 
 }
