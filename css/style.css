@@ -250,6 +250,12 @@ video {
     }
 }
 
+@media screen and (max-width:400px) {
+    nav a{
+        font-size: small;
+    }
+}
+
 /** Footer **/
 
 footer {
