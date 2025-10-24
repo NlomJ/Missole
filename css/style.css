@@ -450,8 +450,11 @@ footer {
     .col-25 {
         width: 100%;
         max-width: none;
-        padding: 0 15px;
         margin: 0 auto;
+        margin-left: 3%;
+        margin-right: 3%;
+        align-content: end;
+        justify-content: end;
     }
 
     h2 {
