@@ -1,8 +1,10 @@
 /*----- General -----*/
 
-*{ box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-.header{
+.header {
     width: 75%;
     max-width: none;
     margin: 0 auto;
@@ -10,26 +12,26 @@
 
 /** Proprietés Polices de Caractères **/
 
- .bungee-regular {
-  font-family: "Bungee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .exo-2-p {
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 /* ----- Positionnement -----*/
 
-.flex-cote{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.flex-cote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* ----- Header -----*/
@@ -40,41 +42,41 @@ nav li {
     padding-right: 10px;
 }
 
-nav ul{
+nav ul {
     padding: 0;
 }
 
-nav a{
-	display: inline-block;
-	text-decoration: none;
-	padding: 3px 7px;
-	border: 1px solid;
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 7px;
+    border: 1px solid;
 }
 
-nav a:hover{
-	display: inline-block;
-	text-decoration: none;
-	padding: 3px 7px;
-	border: 1px solid;
+nav a:hover {
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 7px;
+    border: 1px solid;
     color: aliceblue;
-	background-color: #693D65;
+    background-color: #693D65;
 }
 
-header{
+header {
     background-color: #37A4CC;
 }
 
-header h1 a{
-   color: #693D65;
-   text-decoration: none;
+header h1 a {
+    color: #693D65;
+    text-decoration: none;
 }
 
-header h1 a:hover{
-   color: #AF6672;
-   text-decoration: none;
+header h1 a:hover {
+    color: #AF6672;
+    text-decoration: none;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -85,82 +87,110 @@ header h1 a:hover{
 
 /**-- Proprieté Body--**/
 
- body{
+body {
     margin: 0;
     padding: 0;
- }
+}
 
 /** ----- Proprieté du main ----**/
 
 #slogan {
-  background-image: url(../img/Cameroon-Food.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh; /* Garde une belle hauteur d’écran */
-  
-  display: flex;
-  justify-content: center;   /* Centre horizontalement */
-  align-items: center;       /* Centre verticalement */
-  text-align: center;
-  flex-direction: column;
-  padding: 0;                /* ❌ Supprime le padding qui cassait le centrage */
+    background-image: url(../img/Cameroon-Food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* Garde une belle hauteur d’écran */
+
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    /* ❌ Supprime le padding qui cassait le centrage */
 }
 
 .container1 {
-  max-width: 1200px;
-  margin: 0 auto;
-  line-height: 2rem;
-  color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 2rem;
+    color: #ffffff;
 }
 
 .container1 a {
-  background-color: #693D65;
-  color: #E3CFDE;
-  text-decoration: none;
-  padding: 8px 16px;
-  border: 2px solid black;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 1rem;
+    background-color: #693D65;
+    color: #E3CFDE;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .container1 a:hover {
-  background-color: #AF6672;
-  color: #E3CFDE;
+    background-color: #AF6672;
+    color: #E3CFDE;
 }
 
 
-.container2{
+.container2 {
     max-width: none;
     width: 90%;
     margin: 0 auto;
     line-height: 2rem;
 }
 
-figure{
+figure {
     float: right;
     width: 50%;
 }
 
-#qui_sommes_nous{
+#qui_sommes_nous {
     background-color: #AF6672;
     padding: 7%;
 }
 
-video{
+video {
     width: 100%;
+}
+
+@media screen and (max-width:960px) {
+    figure {
+        display: block;
+        float: none;
+        align-content: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    video{
+        display: inline;
+        justify-content: center;
+    }
+
+    .container2{
+        align-items: center;
+        text-align: justify;
+    }
 }
 
 /** Footer **/
 
-footer{
+footer {
     background-color: #37A4CC;
     margin: none;
     padding: 0 10px;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     width: 75%;
@@ -172,37 +202,37 @@ footer{
 
 
 
-.container_services{
+.container_services {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.card{
+.card {
     background-color: #37A4CC;
     border: 1px solid;
-	padding: 15px;
-	margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 30px;
     width: 95%;
     box-shadow: 2px 4px 10px 4px #E3CFDE;
     text-align: center;
     line-height: 1.5rem;
 }
 
-.card img{
-	width: 100%;
+.card img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.card img:hover{
+.card img:hover {
     box-shadow: 2px 4px 10px 4px #E3CFDE;
 }
 
 
-.link{
+.link {
     border: 1px solid black;
     background-color: #AF6672;
     border-radius: 0.75rem;
@@ -212,7 +242,7 @@ footer{
     margin: 0 30px;
 }
 
-.link:hover{
+.link:hover {
     border: 1px solid black;
     background-color: #d49855;
     border-radius: 0.5rem;
@@ -223,32 +253,32 @@ footer{
 
 /** #7292b7 **/
 
-.col-33{
+.col-33 {
     width: 33.33%;
     max-width: none;
     padding: 0 15px;
 }
 
-.col-100{
+.col-100 {
     display: flex;
-	margin: 0 -15px;
-	flex-wrap: wrap;
+    margin: 0 -15px;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.col-50{
+.col-50 {
     width: 90%;
 }
 
-#section-service{
+#section-service {
     background-color: #E3CFDE;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-#client_satisfait{
+#client_satisfait {
     background-color: #AF6672;
     padding: 7%;
     /* width: 90%;
@@ -256,28 +286,28 @@ footer{
     margin: 0 auto; */
 }
 
-.col-25{
+.col-25 {
     width: 25%;
     padding: 5px;
 }
 
-.col-25 img{
+.col-25 img {
     width: 100%;
 }
 
-.container_clients_satisfait{
+.container_clients_satisfait {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.card_client{
+.card_client {
     padding: 15px;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
     width: 95%;
 }
 
-.card_client img{
+.card_client img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -294,76 +324,110 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
-.card_client img:hover{
+.card_client img:hover {
     box-shadow: 2px 4px 10px 4px #E3CFDE;
+}
+
+@media screen and (max-width:960px) {
+    .col-100 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-33,
+    .col-25 {
+        width: 100%;
+        max-width: none;
+        padding: 0 15px;
+    }
+
 }
 
 /*========== Proprietés Page Services_A_B_C ============*/
 
-#service_A{
+#service_A {
     /* width: 90%;
     max-width: 1200px;
     margin: 0 auto;    */
     background-color: #AF6672;
 }
 
-.col-60{
+.col-60 {
     width: 65%;
     margin: 1px auto
 }
 
-.flex-colonne{
+.flex-colonne {
     display: flex;
-     width: 90%;
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.card_service img{
+.card_service img {
     width: 100%;
     height: 25rem;
     object-fit: cover;
     margin-top: -15px;
 }
 
-.card_service img:hover{
+.card_service img:hover {
     width: 100%;
     height: 25rem;
     object-fit: cover;
     box-shadow: 4px 4px 10px 4px #E3CFDE;
 }
 
-.card_service{
+.card_service {
     width: 95%;
     padding: 15px;
     line-height: 2.2rem;
 }
 
-.col-40{
+.col-40 {
     width: 35%;
     padding: 5px;
 }
 
+@media screen and (max-width:960px) {
+
+    .flex-colonne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-60,
+    .col-40 {
+        width: 100%;
+    }
+
+    .card_client {
+        text-align: justify;
+    }
+}
+
+
 /*========== Proprietés Page Nos_forfaits ============*/
 
-th, td{
+th,
+td {
     border: 2px solid #E3CFDE;
 }
 
-#forfait{
+#forfait {
     background-color: #AF6672;
     padding-top: 3%;
     padding-bottom: 10%;
 }
 
-.container_forfait{
+.container_forfait {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
 }
 
-table{
+table {
     text-align: center;
     width: 90%;
     max-width: 1200px;
@@ -373,22 +437,22 @@ table{
     border-collapse: collapse;
 }
 
-.table_void{
+.table_void {
     border: none;
     background-color: #e7e9ef00;
 }
 
-th{
+th {
     background-color: #693D65;
     padding: 20px;
 }
 
-td{
+td {
     background-color: #AF6672;
     padding: 20px;
 }
 
-td a{
+td a {
     border: 2px solid #E3CFDE;
     background-color: #37A4CC;
     padding: 5px;
@@ -397,7 +461,7 @@ td a{
     color: #E3CFDE;
 }
 
-td a:hover{
+td a:hover {
     border: 2px solid #E3CFDE;
     background-color: #37A4CC;
     box-shadow: 1px 1px 4px 1px #E3CFDE;
@@ -407,55 +471,118 @@ td a:hover{
     text-align: center;
 }
 
+@media screen and (max-width:960px) {
+    td a {
+        display: block;
+        border: 2px solid #E3CFDE;
+        background-color: #37A4CC;
+        padding: 5px;
+        text-decoration: none;
+        text-align: center;
+        color: #E3CFDE;
+    }
+
+    td a:hover {
+        border: 2px solid #E3CFDE;
+        background-color: #37A4CC;
+        box-shadow: 1px 1px 4px 1px #E3CFDE;
+        padding: 5px;
+        color: #693D65;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    table {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-collapse: collapse;
+    }
+
+    .container_forfait {
+        width: 100%;
+        padding: 0px;
+    }
+
+}
+
 /** ========== Proprieté de la page blogue ==========**/
 
-.container_blogue{
+.container_blogue {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.card_blogue{
+.card_blogue {
     display: flex;
 }
 
-.blogue-25{
+.blogue-25 {
     width: 33.33%;
 }
 
-.blogue-25 img{
+.blogue-25 img {
     width: 370px;
     height: 270px;
 }
 
-.blogue-75{
+.blogue-75 {
     width: 66.66%;
     line-height: 2rem;
     padding: 0px 10px 10px 10px;
 }
 
-#blogue{
+#blogue {
     background-color: #AF6672;
     margin: 0;
     padding-top: 5%;
 }
 
+@media screen and (max-width:960px) {
+    .card_blogue {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .blogue-25 {
+        width: 100%;
+    }
+
+    .blogue-25 img {
+        width: 370px;
+        height: 270px;
+    }
+
+    .blogue-75 {
+        width: 100%;
+        line-height: 2rem;
+        padding: 0px 10px 10px 10px;
+        text-align: justify;
+    }
+}
+
 /** ========== Page nous joindre ==========**/
 
-#nous_joindre{
+#nous_joindre {
     background-color: #AF6672;
     margin: 0;
     padding: 0;
     padding-top: 2%;
 }
 
-.container_nous_joindre{
+.container_nous_joindre {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.address{
+.address {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -463,19 +590,19 @@ td a:hover{
     padding: 2%;
 }
 
-.address_jr{
+.address_jr {
     display: flex;
     align-items: center;
 }
 
-.address_jr address{
+.address_jr address {
     border: 2px solid #E3CFDE;
     padding: 10px;
     background-color: #37A4CC;
     margin: 5px;
 }
 
-.address_jr address:hover{
+.address_jr address:hover {
     border: 2px solid #E3CFDE;
     padding: 10px;
     background-color: #37A4CC;
@@ -483,19 +610,24 @@ td a:hover{
     box-shadow: 4px 4px 10px 4px #E3CFDE;
 }
 
-address a{
+address a {
     text-decoration: none;
     color: #000000;
 }
 
-address a:hover{
+address a:hover {
     text-decoration: none;
     color: #E3CFDE
 }
 
-.map{
+.map {
     width: 100%;
     padding: 1%;
 }
 
-
+@media screen and (max-width:960px) {
+    .address {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
